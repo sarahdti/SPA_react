@@ -1,7 +1,7 @@
 function Home(){
     return(
         <>
-        <h1>Home Page</h1>
+        <h3 style={{fontFamily:'Lalezar'}}>ورزش سان</h3>
         </>
     )
 }
