@@ -1,7 +1,9 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import { Link } from 'react-router-dom';
+import './CourseItem.css'
 
-function CourseItem ({title, text, img}){
+function CourseItem ({id,title, text, img}){
 return(
     <Card style={{ width: '18rem' }}>
       <Card.Img variant="top" src={img}/>
@@ -10,7 +12,9 @@ return(
         <Card.Text>
         {text}
         </Card.Text>
-        <Button variant="primary">خرید</Button>
+        <Button variant="primary">
+          <Link to={`/course/${id}`} className='buy-btn'>خرید دوره</Link>
+        </Button>
       </Card.Body>
     </Card>
 )

@@ -1,39 +1,15 @@
 import MyNavbar from "../../components/navbar/Navbar";
 import { Container ,Row , Col} from "react-bootstrap";
 import Mainpic from "../../img/mainPic.svg";
-import Yoga from "../../img/yoga.svg";
-import Pilates from "../../img/pilates.svg";
-import Workout from "../../img/workout.svg";
-import zumba from '../../img/zumba.svg'
+
+import { courseData } from "../../../data";
 
 
 import CourseItem from "../../components/course/CourseItem";
 import { useState } from "react";
 import Footer from "../../components/footer/Footer";
 function Home(){
-    const [courses , setCourses]= useState([
-        {id : 1,
-            title:'پیلاتس',
-            text: 'کلاس پیلاتس با بهترین مربی ها ',
-            img:Pilates
-        },
-        {id : 2,
-            title:'یوگا',
-            text: 'کلاس یوگا با بهترین مربی ها ',
-            img:Yoga
-        },
-        {id : 3,
-            title:'زومبا',
-            text: 'کلاس زومبا با بهترین مربی ها ',
-            img: zumba
-
-        },
-        {id : 4,
-            title:'بدنسازی',
-            text: 'کلاس بدنسازی با بهترین مربی ها ',
-            img:Workout
-        }
-    ])
+    const [courses , setCourses]= useState(courseData)
     return(
         <>
         <MyNavbar/>
