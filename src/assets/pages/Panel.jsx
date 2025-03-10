@@ -1,15 +1,15 @@
 
 import MyNavbar from "../components/navbar/Navbar";
-function Setting (){
+function Panel (){
     
     return(
         <>
         
             <div>
             <MyNavbar/>
-            <h1 style={{textAlign:'center'}}>setting Page</h1>
+            <h1 style={{textAlign:'center'}}>panel Page</h1>
             </div>
         </>
     )
 }
-export default Setting
+export default Panel
