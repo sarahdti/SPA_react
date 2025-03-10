@@ -1,10 +1,15 @@
+
 import MyNavbar from "../../components/navbar/Navbar"
 
 function Panel(){
+   
     return(
         <>
-        <MyNavbar/>
-        <h1>Panel Page</h1>
+       
+            <div>
+            <MyNavbar/>
+            <h1 style={{textAlign:'center'}}>Panel Page</h1>
+            </div>
         </>
     )
 }
