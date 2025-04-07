@@ -10,7 +10,8 @@ import PrivateRoute from "./assets/pages/PrivateRoute"
 const routes =[
     {path:'/', element:<Home/>},
     {path:'/about', element:<About/>},
-    {path:'/blog/', element: <Blog/> , children:[
+    {path:'/blog/', element: <Blog/> , 
+      children:[
       {path:'yoga', element:<h4>یوگا</h4>},
       {path:'workout', element:<h4>بدنسازی</h4>},
       {path:'pilates', element:<h4>پیلاتس</h4>},
