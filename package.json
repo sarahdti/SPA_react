@@ -3,12 +3,14 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://sarahdti.github.io/SPA_react"
+  "homepage": "https://sarahdti.github.io/SPA_react",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "bootstrap": "^5.3.3",
@@ -27,6 +29,7 @@
     "eslint-plugin-react-hooks": "^5.1.0",
     "eslint-plugin-react-refresh": "^0.4.19",
     "file-loader": "^6.2.0",
+    "gh-pages": "^6.3.0",
     "globals": "^15.15.0",
     "url-loader": "^4.1.1",
     "vite": "^6.2.0"
